@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Existing styles remain the same */
+
+/* Update the form styles to include select and time input */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="text"], input[type="time"], select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
+    color: #FFF;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder, select::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+select option {
+    background-color: #FF8C00;
+    color: #FFF;
+}
+
+button[type="submit"] {
+    background-color: #FFA500;
+    color: #FFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF8C00;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
+    color: #FFF;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+button[type="submit"] {
+    background-color: #FFA500;
+    color: #FFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF8C00;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #131211;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Righteous', sans-serif;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(7, 4, 0, 0.949);
+    border-radius: 12px;
+    border: 1px solid rgba(8, 1, 1, 0.125);
+    padding: 38px;
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.banner-image {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+}
+
+.container h2 {
+    font-family: 'Righteous', sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.container p {
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.outline {
+    background: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    transition: all .3s ease;
+}
+
+.outline:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
